@@ -93,7 +93,6 @@
       align-items: center;
       padding: 64px 0 72px;
       border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
     }
 
     .hero-caption {
@@ -115,6 +114,7 @@
       font-weight: 500;
     }
 
+    /* CHANGE 1: accent line under h1 */
     h1 {
       font-size: clamp(2.4rem, 4vw, 3.2rem);
       line-height: 1.0;
@@ -122,6 +122,16 @@
       font-weight: 600;
       max-width: 760px;
       margin-bottom: 22px;
+    }
+
+    h1::after {
+      content: "";
+      display: block;
+      width: 72px;
+      height: 4px;
+      background: var(--accent);
+      margin-top: 18px;
+      border-radius: 999px;
     }
 
     .about-text {
@@ -138,6 +148,11 @@
       margin-bottom: 0;
     }
 
+    /* CHANGE 3: hero-right with glow behind photo */
+    .hero-right {
+      position: relative;
+    }
+
     .profile-photo {
       width: 100%;
       aspect-ratio: 1 / 1;
@@ -149,15 +164,20 @@
       padding: 72px 0;
     }
 
+    /* CHANGE 2: editorial phrase — italic, accent color, no borders, span highlight */
     .editorial-phrase {
       font-size: clamp(1.6rem, 3vw, 2.2rem);
       font-weight: 400;
+      font-style: italic;
       letter-spacing: -0.03em;
       color: var(--muted);
       padding: 1.5rem 0;
-      border-bottom: 1px solid var(--border);
       line-height: 1.1;
       text-align: center;
+    }
+
+    .editorial-phrase span {
+      color: var(--accent);
     }
 
     .section-title {
@@ -368,8 +388,10 @@
 
       </section>
 
+      <!-- CHANGE 2: span wraps "data and AI." for accent color -->
       <div class="editorial-phrase">
-        Building better products through data and AI.
+        Building better products through
+        <span>data and AI.</span>
       </div>
 
       <section id="work">
