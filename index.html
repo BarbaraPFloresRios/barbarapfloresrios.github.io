@@ -205,14 +205,11 @@
       font-size: 0.98rem;
     }
 
-    .project-link {
-      display: inline-block;
-      margin-top: 14px;
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: var(--text);
-      border-bottom: 1.5px solid var(--accent);
-      padding-bottom: 1px;
+    a.project-card {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
     }
 
     footer {
@@ -320,32 +317,26 @@
       </section>
 
       <section id="work">
-        <h2 class="section-title">Selected work</h2>
+        <h2 class="section-title">Recent Projects</h2>
+       
+  
         <div class="grid">
-          <article class="project-card">
+          <a class="project-card" href="https://github.com/BarbaraPFloresRios/JobTracker" target="_blank" rel="noreferrer">
             <h3>JobTracker</h3>
-            <p>
-              Python scraper that tracks new job postings from company career sites and stores
-              results in a structured CSV workflow.
-            </p>
-            <a class="project-link" href="https://github.com/BarbaraPFloresRios/JobTracker" target="_blank" rel="noreferrer">View on GitHub →</a>
-          </article>
+            <p>Automated pipeline built in Python to monitor company career sites,
+  identify relevant roles, and deliver personalized job notifications.</p>
+          </a>
 
-          <article class="project-card">
-            <h3>Climate & Buildings</h3>
-            <p>
-              Modeling work estimating building energy use intensity and greenhouse gas emissions
-              using climate, geographic, and socioeconomic variables.
-            </p>
-          </article>
+          <a class="project-card" href="https://github.com/AliciaXia222/Capstone-Team-Climate-Trace/tree/main" target="_blank" rel="noreferrer">
+            <h3>Global Emissions Modeling</h3>
+            <p>Machine learning project developed with a nonprofit organization to model global building energy use and greenhouse gas emissions using satellite imagery and geospatial features.</p>
+          </a>
 
-          <article class="project-card">
+          <a class="project-card" href="https://www.youtube.com/watch?v=xBUSuDFQqos&t=202s" target="_blank" rel="noreferrer">
             <h3>Mini-Amazon</h3>
-            <p>
-              Flask and PostgreSQL web app with marketplace features, including products,
-              sellers, inventory, purchases, and reviews.
-            </p>
-          </article>
+            <p>Flask and PostgreSQL web app with marketplace features, including products,
+            sellers, inventory, purchases, and reviews.</p>
+          </a>
         </div>
       </section>
     </main>
