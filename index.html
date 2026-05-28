@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bárbara Flores | Data Scientist</title>
-  <meta name="description" content="Bárbara Flores is a Data Scientist focused on product analytics, machine learning, experimentation, and applied AI." />
+  <title>Barbara Flores | Data Scientist</title>
+  <meta name="description" content="Barbara Flores is a Data Scientist focused on product analytics, machine learning, experimentation, and applied AI." />
 
   <style>
     :root {
@@ -13,7 +13,7 @@
       --muted: #5f5f5f;
       --card: #ffffff;
       --border: #dedbd2;
-      --accent: #d9ff5f;
+      --accent: #f0997b;
       --accent-dark: #111111;
     }
 
@@ -79,6 +79,7 @@
       background: var(--accent);
       box-shadow: 3px 3px 0 var(--text);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
+      color: var(--text);
     }
 
     .button:hover {
@@ -128,6 +129,13 @@
       gap: 14px;
     }
 
+    .hero-links .button,
+    .hero-links .outline-link {
+      width: 148px;
+      justify-content: center;
+      text-align: center;
+    }
+
     .outline-link {
       border: 1.5px solid var(--text);
       border-radius: 999px;
@@ -152,6 +160,7 @@
       width: 180px;
       height: 180px;
       background: var(--accent);
+      opacity: 0.35;
       border-radius: 50%;
       right: -40px;
       top: -40px;
@@ -205,6 +214,12 @@
       border: 1px solid var(--border);
       border-radius: 22px;
       padding: 22px;
+      transition: box-shadow 0.15s ease, transform 0.15s ease;
+    }
+
+    .project-card:hover {
+      box-shadow: 4px 4px 0 var(--text);
+      transform: translate(-2px, -2px);
     }
 
     .project-card h3 {
@@ -215,6 +230,16 @@
     .project-card p {
       color: var(--muted);
       font-size: 0.98rem;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text);
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 1px;
     }
 
     footer {
@@ -272,11 +297,11 @@
 <body>
   <div class="page">
     <header>
-      <a class="logo" href="#">Bárbara Flores</a>
+      <span></span>
       <nav>
         <a href="#about">About</a>
         <a href="#work">Work</a>
-        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/barbarafloresrios/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a class="button" href="mailto:barbara.p.flores.rios@gmail.com">Contact</a>
       </nav>
     </header>
@@ -285,22 +310,22 @@
       <section class="hero">
         <div>
           <span class="eyebrow">Data Scientist · Product Analytics · Applied AI</span>
-          <h1>Bárbara Flores</h1>
+          <h1>Barbara Flores</h1>
           <p class="subtitle">
             I build data-driven products and insights across product analytics, experimentation,
             machine learning, and applied AI.
           </p>
           <div class="hero-links">
             <a class="button" href="mailto:barbara.p.flores.rios@gmail.com">Get in touch</a>
-            <a class="outline-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="outline-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="outline-link" href="https://github.com/BarbaraPFloresRios" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="outline-link" href="https://www.linkedin.com/in/barbarafloresrios/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="outline-link" href="#" target="_blank" rel="noreferrer">Resume</a>
           </div>
         </div>
 
         <aside class="visual-card" aria-label="Profile summary">
           <div class="shape"></div>
-          
+
           <div class="visual-card-content">
             <img
               class="profile-photo"
@@ -321,7 +346,7 @@
       <section id="about">
         <h2 class="section-title">About</h2>
         <p class="about-text">
-          I’m a Data Scientist with experience in product analytics, experimentation,
+          I'm a Data Scientist with experience in product analytics, experimentation,
           machine learning, and business strategy. I recently worked at Meta and completed
           graduate training in Interdisciplinary Data Science at Duke University. Before that,
           I led analytics and data science initiatives in retail and financial services,
@@ -338,6 +363,7 @@
               Python scraper that tracks new job postings from company career sites and stores
               results in a structured CSV workflow.
             </p>
+            <a class="project-link" href="https://github.com/BarbaraPFloresRios/JobTracker" target="_blank" rel="noreferrer">View on GitHub →</a>
           </article>
 
           <article class="project-card">
@@ -360,7 +386,7 @@
     </main>
 
     <footer>
-      <span>© 2026 Bárbara Flores</span>
+      <span>© 2026 Barbara Flores</span>
       <span>Data Science · Product · AI</span>
     </footer>
   </div>
