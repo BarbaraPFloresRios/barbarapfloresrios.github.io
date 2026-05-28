@@ -96,6 +96,15 @@
       border-bottom: 1px solid var(--border);
     }
 
+    .hero-caption {
+      color: var(--text);
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin-top: 16px;
+      line-height: 1.6;
+      padding-left: 10px;
+    }
+
     .hero-quote {
       font-size: clamp(1.8rem, 3vw, 3rem);
       line-height: 1.05;
@@ -107,8 +116,8 @@
     }
 
     h1 {
-      font-size: clamp(3.2rem, 8vw, 6.8rem);
-      line-height: 0.92;
+      font-size: clamp(2.4rem, 4vw, 3.2rem);
+      line-height: 1.0;
       letter-spacing: -0.02em;
       font-weight: 600;
       max-width: 760px;
@@ -129,42 +138,11 @@
       margin-bottom: 0;
     }
 
-    .visual-card {
-      border: 1.5px solid var(--border);
-      border-radius: 28px;
-      background: var(--card);
-      padding: 28px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .shape {
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      background: var(--accent);
-      opacity: 0.35;
-      border-radius: 50%;
-      right: -40px;
-      top: -40px;
-    }
-
-    .visual-card-content {
-      position: relative;
-      z-index: 1;
-    }
-
     .profile-photo {
       width: 100%;
       aspect-ratio: 1 / 1;
       object-fit: cover;
-      border-radius: 22px;
-      margin-bottom: 24px;
-    }
-
-    .visual-card p {
-      color: var(--muted);
-      font-size: 0.98rem;
+      border-radius: 6px;
     }
 
     section {
@@ -372,11 +350,7 @@
 
         </div>
 
-        <aside class="visual-card" aria-label="Profile summary">
-
-          <div class="shape"></div>
-
-          <div class="visual-card-content">
+        <aside class="hero-right" aria-label="Profile summary">
 
             <img
               class="profile-photo"
@@ -384,13 +358,11 @@
               alt="Barbara Flores"
             />
 
-            <p>
+            <p class="hero-caption">
               From Chile 🇨🇱, currently based in the Bay Area.
               <br />
               I enjoy coffee shops ☕, travel ✈️, and anime.
             </p>
-
-          </div>
 
         </aside>
 
